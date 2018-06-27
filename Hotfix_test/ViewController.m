@@ -16,12 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    111
-    
-    
-    
-    
+
     MightyCrash *mighty = [[MightyCrash alloc]init];
     [mighty divideUsingDenominator:nil];
 }
