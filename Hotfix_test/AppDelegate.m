@@ -18,16 +18,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
+    //提前提供本地接口
     [Felix fixIt];
-    NSString *fixScriptString = @" \
-    fixInstanceMethodReplace('MightyCrash', 'divideUsingDenominator:', function(instance, originInvocation, originArguments){ \
+    
+    
+    ///模拟接口返回的js字符串
+    NSString *fixScriptString = @"\
+    fixInstanceMethodReplace('MightyCrash', 'divideUsingDenominator:obj2: ', function(instance, originInvocation, originArguments){ \
     console.log(instance); \
     console.log(originInvocation); \
     console.log(originArguments); \
     console.log(JSON.stringify(originArguments)); \
     if (originArguments[0] == null) { \
-    console.log('adan asdomao');\
+    console.log('传入的值 为空');\
     } else { \
     runInvocation(originInvocation); \
     } \

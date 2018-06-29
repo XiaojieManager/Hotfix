@@ -17,8 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    //crash
     MightyCrash *mighty = [[MightyCrash alloc]init];
-    [mighty divideUsingDenominator:nil];
+    [mighty divideUsingDenominator:nil obj2:@"obj2"];
 }
 
 

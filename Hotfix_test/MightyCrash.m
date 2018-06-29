@@ -9,7 +9,7 @@
 #import "MightyCrash.h"
 
 @implementation MightyCrash
-- (NSArray *)divideUsingDenominator:(id)denominator
+- (NSArray *)divideUsingDenominator:(id)denominator obj2:(id)obj2
 {
     return @[denominator];
 }

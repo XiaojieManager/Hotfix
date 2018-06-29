@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface MightyCrash : NSObject
-- (NSArray *)divideUsingDenominator:(id)denominator;
+- (NSArray *)divideUsingDenominator:(id)denominator obj2:(id)obj2;
 @end
